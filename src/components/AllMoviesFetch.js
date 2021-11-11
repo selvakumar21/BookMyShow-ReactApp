@@ -10,7 +10,7 @@ function AllMoviesFetch() {
 
     useEffect( async () => {
         try {
-            const response = await axios.get('https://book-my-show-backend-21.herokuapp.com//movies');
+            const response = await axios.get('https://book-my-show-backend-21.herokuapp.com/movies');
             console.log(response);
             setData(response.data);
         } catch (error) {
