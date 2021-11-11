@@ -8,9 +8,9 @@ import { useState,useEffect } from 'react';
 function AllMoviesFetch() {
     const [data, setData] = useState([]);
 
-    useEffect( async () =>{
+    useEffect( async () => {
         try {
-            const response = await axios.get('http://localhost:5000/movies');
+            const response = await axios.get('https://book-my-show-backend-21.herokuapp.com//movies');
             console.log(response);
             setData(response.data);
         } catch (error) {
